@@ -429,7 +429,7 @@ async function agentsAPIworkflow() {
   const createDocument = await axios.post(`/knowledge/${knowledgeId}/documents`,
     {
       "documentType": "pdf",
-      "source_url": "https://www.stroke.org.uk/sites/default/files/complete_guide_to_communication_problems_after_stroke.pdf",
+      "source_url": "https://nikhilp6.sg-host.com/Speech_and_language_impairment.pdf",
       "title": "complete_guide_to_communication_problems_after_stroke",
     })
   console.log("Create Document: ", createDocument.data)
@@ -516,5 +516,5 @@ agentsButton.onclick = async () => {
 }
 
 // Paste Your Created Agent and Chat IDs Here:
-agentId = "agt_IX6LNEGV"
-chatId = ""
+agentId = "agt_rXcw2xS1"
+chatId = "cht_KtZ4eqcNXQAU7-oN8coet"
