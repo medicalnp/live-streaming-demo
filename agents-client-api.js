@@ -429,8 +429,8 @@ async function agentsAPIworkflow() {
   const createDocument = await axios.post(`/knowledge/${knowledgeId}/documents`,
     {
       "documentType": "pdf",
-      "source_url": "https://d-id-public-bucket.s3.us-west-2.amazonaws.com/Prompt_engineering_Wikipedia.pdf",
-      "title": "Prompt Engineering Wikipedia Page PDF",
+      "source_url": "https://www.stroke.org.uk/sites/default/files/complete_guide_to_communication_problems_after_stroke.pdf",
+      "title": "complete_guide_to_communication_problems_after_stroke",
     })
   console.log("Create Document: ", createDocument.data)
 
@@ -471,7 +471,7 @@ async function agentsAPIworkflow() {
         "type": "openai",
         "provider": "openai",
         "model": "gpt-3.5-turbo-1106",
-        "instructions": "Your name is Emma, an AI designed to assist with information about Prompt Engineering and RAG"
+        "instructions": "Your name is Emma, an AI designed to help patients with speech and language exercises"
       },
       "preview_name": "Emma"
     }
@@ -516,5 +516,5 @@ agentsButton.onclick = async () => {
 }
 
 // Paste Your Created Agent and Chat IDs Here:
-agentId = ""
+agentId = "agt_IX6LNEGV"
 chatId = ""
